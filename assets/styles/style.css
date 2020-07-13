@@ -18,7 +18,7 @@ a, li, button{
 }
 
 section{
-    padding: 5% 10%;
+    padding: 5% 10% 9%;
     text-align: center;
     color: #edf0f1;
 }
@@ -94,32 +94,56 @@ section:first-child{
 }
 
 .header-depo-coment{
+    background-color: rgba(214, 213, 213, 0.103);
+    padding: 0 55px;
     width: 40%;
     text-align:center;
     color:#edf0f1;
-    margin-top:50px;
 }
+
+.header-depo-coment p {
+    background-color: rgba(214, 213, 213, 0);
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
 
 .title{
     text-transform: uppercase;
-    margin: 34px 0;
+    margin: 17px 0;
 }
+ 
+.title__depo{
+    background-color:rgba(214, 213, 213, 0) ;
+    margin:40px 0 17px;
+}
+
 
 /*fim do header*/
 
 /*início sobre nós*/
+.about-us p {
+    margin-bottom: 3%;
+}
 /*fim sobre nós*/
 
 /*início contato*/
 
+.contact{
+    background-color:rgba(214, 213, 213, 0.096) ;
+}
 
+.title__contact{
+    background-color:rgba(214, 213, 213, 0) ;
+
+}
 .form{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color:rgba(214, 213, 213, 0) ;
     padding-top: 5%;
     padding: 45px;
-    margin-top: 50px    ;
     background: #FFFFFF;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);  
@@ -141,6 +165,11 @@ section:first-child{
     margin: 0 auto;
 }
 
+.contact-form p {
+    background-color:rgba(214, 213, 213, 0.096) ;
+    padding-bottom: 50px;
+}
+
 .form-submit{
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
@@ -157,7 +186,45 @@ section:first-child{
 
 /*fim contato*/
 
+/*Inicio footer*/
 
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    color: #edf0f1;
+}
+/*Fim footer*/
+
+
+/*Media queries*/
+@media(max-width: 420px){
+    .header-depo{
+        flex-direction: column;
+    }
+
+    .header-depo-banner, .header-depo-coment{
+        width: 100%;
+    }
+
+    .header-depo-coment{
+        padding: 0px 31px 40px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .header-depo-banner{
+        width: 46%;
+    }
+    .header-depo-coment{
+        width: 54%;
+    }
+}
 
 
 /*keyframes e outras magias do css*/
